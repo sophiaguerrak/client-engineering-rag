@@ -230,4 +230,4 @@ Communication, both for questions and delivery purposes, must be sent to:
 
 ## Authors
 
-- [Facundo Iraola](www.linkedin.com/in/firaola). Engagement Lead, Data & AI | Build Lab Americas.
+- [Facundo Iraola](www.linkedin.com/in/firaola). Client Engineering - Ecosystem | AI Engineer - Project Lead (LATAM).
