@@ -203,7 +203,7 @@ Each participant must submit the following:
 
 ### 5.2. Timeline and Communication
 
-- The challenge is **fully remote** and will last **7 calendar days** from the moment the candidate receives this document.
+- The challenge is **fully remote**.
 - Any questions can be sent to the designated contact point(s), which will be provided via email.
 
 ---
@@ -224,7 +224,7 @@ Communication, both for questions and delivery purposes, must be sent to:
 - `Gabriela Retamosa`. Client Engineering - Ecosystem | BTL - SSA & Mexico. [gabyretamosa@uy.ibm.com](mailto:gabyretamosa@uy.ibm.com)
 - `Facundo Iraola`. Client Engineering - Ecosystem | AI Engineer - Project Lead (LATAM) [fid@ibm.com](mailto:fid@ibm.com)
 - `Sebastian Fripp`. Client Engineering - Ecosystem | AI Engineer - Project Lead (LATAM) [sfripp@ibm.com](mailto:sfripp@ibm.com)
-- `Nadia dos Santos`. Client Engineering - Ecosystem | Platform Engineer - Project Lead (LATAM) [nadiadossantos@ibm.com](mailto:nadiadossantos@ibm.com)
+- `Nadia Dos Santos`. Client Engineering - Ecosystem | Platform Engineer - Project Lead (LATAM) [nadiadossantos@ibm.com](mailto:nadiadossantos@ibm.com)
 
 ---
 
