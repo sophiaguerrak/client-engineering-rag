@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from app.rag import ask_question
 from fastapi.middleware.cors import CORSMiddleware
 import sqlite3
+import os
 
 app = FastAPI()
 
@@ -38,7 +39,8 @@ class ChatMessage(BaseModel):
 
 @app.post("/messages")
 def save_message(msg: ChatMessage):
-    conn = sqlite3.connect('chunks.db')
+    DB_PATH = os.path.join(os.path.dirname(__file__), "chunks.db")
+    conn = sqlite3.connect(DB_PATH)
     cur = conn.cursor()
     cur.execute(
         "INSERT INTO chat_messages (chat_id, sender, text) VALUES (?, ?, ?)",
@@ -50,7 +52,8 @@ def save_message(msg: ChatMessage):
 
 @app.get("/messages")
 def get_messages():
-    conn = sqlite3.connect('chunks.db')
+    DB_PATH = os.path.join(os.path.dirname(__file__), "chunks.db")
+    conn = sqlite3.connect(DB_PATH)
     cur = conn.cursor()
     cur.execute("SELECT chat_id, sender, text, timestamp FROM chat_messages ORDER BY timestamp ASC")
     rows = cur.fetchall()
@@ -59,7 +62,8 @@ def get_messages():
 
 @app.delete("/messages/{chat_id}")
 def delete_chat(chat_id: int):
-    conn = sqlite3.connect("chunks.db")  
+    DB_PATH = os.path.join(os.path.dirname(__file__), "chunks.db")
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute("DELETE FROM chat_messages WHERE chat_id = ?", (chat_id,))
     conn.commit()
