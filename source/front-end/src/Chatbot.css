@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.app-container {
+    display: flex;
+    height: 100vh;
+    background: #f4f4f4;
+    font-family: 'IBM Plex Sans';
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #161616;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar h2 {
+    margin-top: 0;
+  }
+  
+  .sidebar button {
+    background-color: #0f62fe;
+    border: none;
+    padding: 0.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .chat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .chat-list li {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .chat-list li.active,
+  .chat-list li:hover {
+    background-color: #393939;
+  }
+  
+  .chat-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 280px);
+  }
+  
+  .chat-header {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    color:black;
+  }
+  
+  .logo {
+    height: 80px;
+    margin: 3%;
+  }
+  
+  .chat-box {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    max-width: 80%;
+    margin: 6px 0;
+    padding: 10px 14px;
+    border-radius: 12px;
+    word-wrap: break-word;
+  }
+  
+  .message.user {
+    align-self: flex-end;
+    background-color: #0f62fe;
+    color: white;
+  }
+  
+  .message.bot {
+    align-self: flex-start;
+    background-color: #e0e0e0;
+    color: black;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+  }
+  
+  .chat-input button {
+    padding: 0.5rem 1rem;
+    background-color: #0f62fe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .delete-chat-btn {
+    background-color: transparent;
+    border: none;
+    color: #ff4d4f;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+  
+  .delete-chat-btn:hover {
+    color: #d9363e;
+  }
